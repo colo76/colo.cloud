@@ -1,0 +1,37 @@
+#Component Info
+info:
+ component: Public-RestService
+ 
+#Spring Application Name 
+spring:
+ application:
+  name: Public-RestService
+ cloud: 
+  config:
+   enabled: true
+   uri: http://localhost:8888 
+ 
+#Port - If 0 get random port
+server: 
+ port: 0
+  
+#Eureka Instance ID
+eureka:
+ registration
+   enabled: true
+ instance:
+  instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:{random.value}}}
+ 
+#Service Registration Method 
+cloud:
+ services:
+  registrationMethod: route
+ 
+ #config:
+ #     enabled: true
+ #     uri: http://localhost:8888
+ 
+#Disable HTTP Basic Authentication
+security:
+ basic:
+  enabled: false
