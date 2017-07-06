@@ -10,6 +10,10 @@ spring:
   config:
    enabled: true
    uri: http://localhost:8888 
+
+
+profiles:
+  active: test
  
 #Port - If 0 get random port
 server: 
@@ -26,11 +30,7 @@ eureka:
 cloud:
  services:
   registrationMethod: route
- 
- #config:
- #     enabled: true
- #     uri: http://localhost:8888
- 
+  
 #Disable HTTP Basic Authentication
 security:
  basic:

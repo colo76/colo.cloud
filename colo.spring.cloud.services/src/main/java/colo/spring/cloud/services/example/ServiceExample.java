@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ServiceExample {
-    @Value("${message.greeting}")
+    
+	@Value("${message.text}")
 	String valueExample = null;
 
+	
 	private static Logger log = LoggerFactory.getLogger(ServiceExample.class);
 
 	
@@ -23,7 +25,7 @@ public class ServiceExample {
 		// TODO Auto-generated constructor stub
 	}
 
-	@RequestMapping(value = "/example")
+	@RequestMapping(value = "/message")
 	public String example() {
 
 		String result = "{Empty Value}";
@@ -32,13 +34,16 @@ public class ServiceExample {
 			log.error("PublicRestService - Called with errors property rest.service.cloud.config.example is empty");
 
 		} else {
-			log.info("PublicRestService - Called with this property: (rest.service.cloud.config.example:" + valueExample
+			log.info("	 - Called with this property: (rest.service.cloud.config.example:" + valueExample
 					+ ")");
 			result = valueExample;
 		}
 		return result;
 	}
 
+
+
+	
 	public String getValueExample() {
 		return valueExample;
 	}
