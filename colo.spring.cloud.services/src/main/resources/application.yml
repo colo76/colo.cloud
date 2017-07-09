@@ -16,10 +16,6 @@ spring:
    uri: http://localhost:8888 
 
 
-profiles:
-  active: alt
- 
-
   
 #Eureka Instance ID
 eureka:
