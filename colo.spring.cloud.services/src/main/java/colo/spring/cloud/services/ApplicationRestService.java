@@ -23,7 +23,6 @@ public class ApplicationRestService {
 
 		// Agregue esto porq no registra bien el nombre en zuul, lo saqué de aca
 		// https://github.com/spring-cloud/spring-cloud-netflix/issues/1335
-		System.setProperty("spring.application.name", "Public-RestService");
 		System.setProperty("spring.profiles.active", "alt");
 
 		SpringApplication.run(ApplicationRestService.class, args);

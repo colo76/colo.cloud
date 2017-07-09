@@ -11,3 +11,4 @@ eureka:
       enabled: true  
  server:
   waitTimeInMsWhenSyncEmpty: 0
+  enableSelfPreservation: false
