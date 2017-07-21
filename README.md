@@ -1,7 +1,6 @@
 # colo.cloud
 
-
-An PoC of Spring Micorservices
+An PoC of Spring Microservices
 
 
 Centralized configuration with spring-cloud.config(colo.spring.cloud.config)
