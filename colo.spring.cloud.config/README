@@ -9,15 +9,13 @@ $ git add -A .
 $ git commit -m "Add Public-RestService.yml"
 
 
-
 To create the private key:
 keytool -genkeypair -alias testkey -keyalg RSA   -dname "CN=Colo Config Server,OU=Colo,O=Colo,L=City,S=Buenos Aires,C=AR"   -keypass Colo1234 -keystore server.jks -storepass Colo1234
 
 TODO vault!: https://www.vaultproject.io/intro/getting-started/dev-server.html
 
 How to encrypt properties:
-
-curl localhost:8888/encrypt -d colo
+ curl localhost:8888/encrypt -d colo
 
 
 How to decrypt properties:
