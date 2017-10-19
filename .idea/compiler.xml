@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="colo.spring.cloud" />
+        <module name="colo.spring.cloud.discovery" />
+        <module name="colo.spring.cloud.routing" />
+        <module name="colo.spring.cloud.services" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="colo.spring.cloud" target="1.8" />
+      <module name="colo.spring.cloud.discovery" target="1.8" />
+      <module name="colo.spring.cloud.routing" target="1.8" />
+      <module name="colo.spring.cloud.services" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
