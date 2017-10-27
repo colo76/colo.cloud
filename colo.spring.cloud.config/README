@@ -1,7 +1,4 @@
-Tomado de aca: https://www.adictosaltrabajo.com/tutoriales/introduccion-a-la-gestion-de-servicios-web-con-spring-cloud-y-netflix-oss/
-
-
-Para crear el repositorio local de configuración
+To create a local configuration repository: 
 
 $ cd $HOME
 $ mkdir config-repo
@@ -12,17 +9,23 @@ $ git add -A .
 $ git commit -m "Add Public-RestService.yml"
 
 
-
-Para crear la clave privada
+To create the private key:
 keytool -genkeypair -alias testkey -keyalg RSA   -dname "CN=Colo Config Server,OU=Colo,O=Colo,L=City,S=Buenos Aires,C=AR"   -keypass Colo1234 -keystore server.jks -storepass Colo1234
 
-Actualizar esto: https://www.vaultproject.io/intro/getting-started/dev-server.html
+TODO vault!: https://www.vaultproject.io/intro/getting-started/dev-server.html
 
-Encriptar Propiedades:
+How to query configurations( [/{name}/{profiles}/{label:):
+ curl localhost:8888/Public-RestService/dev
 
-curl localhost:8888/encrypt -d colo
+
+How to encrypt properties:
+ curl localhost:8888/encrypt -d colo
 
 
 Desencriptar propiedades:
 curl localhost:8888/decrypt -d AQBzQHyMw2qfVp/HXxCrojQPH/YQ58q5X62zieb1RaxXwiNNW5go5ryEEgYFR+n3DkZdPBH3XyqGSsH2ZlDKNbddnhOnh7M91wwCE5A/pRTTYQsSe/xYPzaEl0nMuRNsx61jRaSCbhoWwHI9KAIAAotfKPlAr6Ryw1Zsda12Xo++Fyqsf0lPMvx03og05ASSRSjemxlYW9+wod3hBunlixLvS0dK7y6E6iysTRFJHfFOBfyfeBgzFNXp/hhbbPtL+kUGy09nRuNDwvuaeaEt9INrxAbEBxkVbfzB+CcYBs5/osHLNkq3ylqE1I6ZUxMrkBb7VSOFI3znG1DRZp5bUF0Ne7RH8WBM59ndzOePBctraincXVcLtfwpH8K5du3c8Z4=
+
+How to decrypt properties:
+ curl localhost:8888/decrypt -d AQBzQHyMw2qfVp/HXxCrojQPH/YQ58q5X62zieb1RaxXwiNNW5go5ryEEgYFR+n3DkZdPBH3XyqGSsH2ZlDKNbddnhOnh7M91wwCE5A/pRTTYQsSe/xYPzaEl0nMuRNsx61jRaSCbhoWwHI9KAIAAotfKPlAr6Ryw1Zsda12Xo++Fyqsf0lPMvx03og05ASSRSjemxlYW9+wod3hBunlixLvS0dK7y6E6iysTRFJHfFOBfyfeBgzFNXp/hhbbPtL+kUGy09nRuNDwvuaeaEt9INrxAbEBxkVbfzB+CcYBs5/osHLNkq3ylqE1I6ZUxMrkBb7VSOFI3znG1DRZp5bUF0Ne7RH8WBM59ndzOePBctraincXVcLtfwpH8K5du3c8Z4=
+
 
