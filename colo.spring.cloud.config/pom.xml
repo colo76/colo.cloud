@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>colo.spring.cloud</groupId>
-	<artifactId>colo.spring.cloud</artifactId>
+	<groupId>colo.spring.cloud.config</groupId>
+	<artifactId>colo.spring.cloud.config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>colo.spring.cloud</name>
 	<description>03/07/2017</description>

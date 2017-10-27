@@ -2,15 +2,9 @@ package colo.spring.cloud.services.example;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import javax.ws.rs.core.HttpHeaders;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -63,16 +57,7 @@ public class ServiceExample {
 	}
 	
 	
-    @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestBody Login login) {
 
-
-
-        //validate login here
-
-        return new ResponseEntity("Login Ok", new Multiva,HttpStatus.OK);
-
-    }
 	
 	
 }
