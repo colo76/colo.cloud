@@ -1,9 +1,16 @@
-*/target/*
-*/.settings/*
+#Eclipe
 .classpath
 .project
-.settings
-
-*/.idea/*
+.settings/
+ 
+# Intellij
+.idea/
 *.iml
-.idea
+*.iws
+ 
+# Mac
+.DS_Store
+ 
+# Maven
+log/
+target/
